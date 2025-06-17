@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #1f1c2c, #928dab);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.app-container {
+  width: 90%;
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tab-btn.active {
+  background: #fff;
+  color: #1f1c2c;
+}
+
+.tab-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.display {
+  font-size: 36px;
+  margin-top: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.glow {
+  text-shadow: 0 0 15px #00ffe5, 0 0 20px #00ffe5;
+}
+
+input[type="number"] {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  width: 80%;
+  max-width: 250px;
+  margin-top: 10px;
+}
+
+.action-btn {
+  margin: 15px 5px 0;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #00ffe5;
+  border: none;
+  font-weight: bold;
+  color: #1f1c2c;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.action-btn:hover {
+  background-color: #00c9b7;
+}
+
+.sw-controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+}

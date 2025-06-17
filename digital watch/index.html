@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clock App | Shreetej</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app-container glass">
+    <h1>⏱️ Clock App</h1>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="clock">Clock</button>
+      <button class="tab-btn" data-tab="timer">Timer</button>
+      <button class="tab-btn" data-tab="stopwatch">Stopwatch</button>
+    </div>
+
+    <div id="clock" class="tab-content">
+      <h2 class="display glow" id="digitalClock">--:--:--</h2>
+    </div>
+
+    <div id="timer" class="tab-content hidden">
+      <input type="number" id="timerInput" placeholder="Enter seconds..." />
+      <button class="action-btn" onclick="startTimer()">Start</button>
+      <h2 class="display" id="timerDisplay">00:00</h2>
+    </div>
+
+    <div id="stopwatch" class="tab-content hidden">
+      <h2 class="display" id="stopwatchDisplay">00:00:00</h2>
+      <div class="sw-controls">
+        <button class="action-btn" onclick="startStopwatch()">Start</button>
+        <button class="action-btn" onclick="pauseStopwatch()">Pause</button>
+        <button class="action-btn" onclick="resetStopwatch()">Reset</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
